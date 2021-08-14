@@ -9,18 +9,13 @@ In this project I access ACS data via BigQuery's API and perform some explorator
 
 ## Prerequisites
 To get started you'll need to install and import some libraries:
+
 `from google.cloud import bigquery`
-
 `import pandas as pd`
-
 `import os`
-
 `import numpy as np`
-
 `import matplotlib.ticker as mtick`
-
 `import matplotlib.pyplot as plt`
-
 `from heatmap import heatmap, corrplot`
 
 I use Google's own BigQuery Python Library to pull the data straight from the BigQuery API into a dataframe, numpy for plotting a few best fit lines, and a fantastic package called [`heatmapz`](https://pypi.org/project/heatmapz/) that makes really pretty, simple correlation heatmaps using Matplotlib and Seaborn.
@@ -28,9 +23,7 @@ I use Google's own BigQuery Python Library to pull the data straight from the Bi
 In particular I had to install bigquery using
 
 `pip install --upgrade google-cloud`
-
 `pip install --upgrade google-cloud-bigquery`
-
 `pip install --upgrade google-cloud-storage`
 
 Let's just say it a couple tries and StackOverflows to get it right.
